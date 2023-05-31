@@ -125,11 +125,11 @@ header{
         text-align: center;
         align-items: center;
     }
-    .video{
+    .video iframe{
         width: 100%;
     }
     
-    .info .map{
+    .map iframe{
         width: 100%;
     } 
     
