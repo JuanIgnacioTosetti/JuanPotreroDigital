@@ -55,14 +55,10 @@ header{
 }
 
 .img-comida img{
-    height: 60vh;
+    width: 100%;
+    max-width: 600px;
 }
 
-@media(min-width:769px){
-    .img-comida img{
-        height: 450px;
-    }
-}
 
 /* Inicio Info */
 .info{
