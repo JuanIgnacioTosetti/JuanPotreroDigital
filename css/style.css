@@ -50,36 +50,67 @@ header{
     display: flex;
     background-color:#e3e5d7;
     padding: 20px;
-    border-radius: 15px;
     flex-direction: column;
     align-items: center;
 }
-.imgs{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
-.imgs_{
-    max-width: 300px;
+
+.img-comida img{
+    height: 60vh;
 }
 
+@media(min-width:769px){
+    .img-comida img{
+        height: 450px;
+    }
+}
+
+/* Inicio Info */
 .info{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-
-#masrecetas{
-    padding: 20px;
+.info iframe{
+    height: 50vh;
+}
+/* Receta */
+.preparacion img{
+    width: 300px;
+    border-radius: 15px;
 }
 
-#masrecetas .enlaces{
+@media(max-width: 722px){
+    .preparacion img{
+        display: none;
+    }
+}
+
+/* Cards */
+
+.mas__recetas{
+    margin: 120px auto;
+    text-align: center;
+}
+
+.cards__container{
+    justify-content: center;
+}
+
+.card-body{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
+.btn-primary{
+    background-color: #254242;
+    border: none;
+}
+.btn-primary:hover{
+    background-color: #586875 ;
+}
+/* Fin de Cards */
 .footer{
     background-color: #586875;
     padding: 15px;
@@ -135,8 +166,3 @@ header{
     
 }
 
-@media(max-width: 992px){
-    .acomp{
-        display: none;
-    }
-}
