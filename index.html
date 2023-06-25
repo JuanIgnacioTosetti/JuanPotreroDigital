@@ -21,8 +21,11 @@
 </head>
 
 <body>
+    <script>
+        alert("Hola! Listo para ver la mejor receta para los dias grises?")
+    </script>
 
-    <header>
+    <header id="header">
         <div><img class="logo" src="./img/logo.jpg" alt="logo de la pagina" srcset=""></div>
 
         <h1 class="header__title">Receta de Buñuelos</h1>
@@ -32,6 +35,17 @@
             <a href="#" class="link_rs"><i class="bi bi-instagram"></i></a>
         </div>
     </header>
+    
+    <nav id="nav">
+        <ul class="navbar">
+            <li><a href="#ingredientes">Ingredientes</a></li>
+            <li><a href="#preparacion">Preparación</a></li>
+            <li><a href="#masrecetas">Enlaces</a></li>
+            <li><a href="#footer">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <button id="accesibilidadButton" type="button" class="btn btn-secondary m-1" onclick="vistaNocturna()">Modo nocturno</button>
 
     <div class="whatsapp-icon">
         <a target="_blank" href="https://wa.me/2215917413">
@@ -65,7 +79,7 @@
         </div>
     </div>
 
-        <p class="mg-15 ">Los buñuelos son un clásico de la pastelería argentina que acompañan infusiones como el mate,
+        <p class="mg-15" id="text">Los buñuelos son un clásico de la pastelería argentina que acompañan infusiones como el mate,
             el té o el café. Son fáciles de preparar y se resuelven muy rápidamente con pocos ingredientes</p>
 
         <section id="ingredientes">
@@ -80,7 +94,7 @@
             </ul>
         </section>
 
-        <section class="preparacion">
+        <section class="preparacion" id="preparacion">
             <h2 class="titulo mg-15">Preparación</h2>
             <ol>
                 <li>Mezclar los huevos, el azúcar, la harina leudante y el extracto de vainilla o la ralladura de naranja.</li>
@@ -110,7 +124,7 @@
             </div>
         </section>
 
-        <section class="mas__recetas">
+        <section class="mas__recetas" id="masrecetas">
             <h3 class="titulo">Enlaces que te pueden interesar</h3>
 
             <div class="cards__container row gap-2">
@@ -155,15 +169,16 @@
         </section>
 
         
-        <footer class="footer">
+        <footer class="footer" id="footer">
 
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52343.08435818249!2d-57.99437008011886!3d-34.92043086883833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62b1f0085a1%3A0xbcfc44f0547312e3!2sLa%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1684804267662!5m2!1ses!2sar"
                 width="400" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-            <p>Juan Ignacio Tosetti <br> La plata, Buenos Aires <br> Argentina</p>
+            
 
+            <button id="+info" class="btn btn-outline-dark" onclick="mostrarInfo()">informacion del desarrollador</button>
 
             <div class="redes__sociales">
                 <a href="https://www.instagram.com/juantosetti/" target="_blank" class="social__link"><i
@@ -179,6 +194,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
             crossorigin="anonymous"></script>
+        <script src="./js/script.js"></script>
 </body>
 
 </html>
