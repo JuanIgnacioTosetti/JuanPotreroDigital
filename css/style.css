@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f6eddc;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mg-15{
+    margin-left: 15px;
+}
+.titulo{
+    font-size: 30px;
+    color: #586875;
+    text-decoration: underline;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+/* Header */
+header{
+    background-color: #254242;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #f6eddc;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 15vh;
+    border-radius: 50%;
+}
+
+.link_rs{
+    color: #f6eddc;
+}
+
+.links__redes a i{
+    margin: 10px;
+}
+/* Fin de Header */
+/* Nav */
+nav {
+    background-color: #254242;
+    padding: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #f6eddc;
+    font-size: 16px;
+    position: relative;
+}
+
+.navbar a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #f6eddc;
+    bottom: -5px;
+    left: 0;
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Imagenes */
+.img-comida{
+    display: flex;
+    background-color:#e3e5d7;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-comida img{
+    width: 100%;
+    max-width: 600px;
+}
+
+
+/* Inicio Info */
+.info{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info iframe{
+    height: 50vh;
+}
+/* Receta */
+.preparacion img{
+    width: 300px;
+    border-radius: 15px;
+}
+
+@media(max-width: 722px){
+    .preparacion img{
+        display: none;
+    }
+}
+
+/* Cards */
+
+.mas__recetas{
+    margin: 120px auto;
+    text-align: center;
+}
+
+.cards__container{
+    justify-content: center;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn-primary{
+    background-color: #254242;
+    border: none;
+}
+.btn-primary:hover{
+    background-color: #586875 ;
+}
+/* Fin de Cards */
+.footer{
+    background-color: #586875;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+}
+.footer p{
+    color: #f6eddc;
+    order:3;
+}
+
+.footer a{
+    color: #e3e5d7;
+}
+
+.footer .redes__sociales i{
+    margin: 20px;
+
+}
+.footer .redes__sociales i:hover{
+    color: #254242;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.whatsapp-icon a img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+@media(max-width: 576px){
+    .info .titulo{
+        text-align: center;
+        align-items: center;
+    }
+    .video iframe{
+        width: 100%;
+    }
+    
+    .map iframe{
+        width: 100%;
+    } 
+    
+}
+

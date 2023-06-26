@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- SEO -->
+    <meta name="description" content="Recetas para bajonear">
+    <meta name="keywords" content="Recetas, bunuelitos, masa, cocina">
+    <meta name="author" content="juantosetti">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta de buñuelos - el buñuelo feliz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="./img/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <script>
+        alert("Hola! Listo para ver la mejor receta para los dias grises?")
+    </script>
+
+    <header id="header">
+        <div><img class="logo" src="./img/logo.jpg" alt="logo de la pagina" srcset=""></div>
+
+        <h1 class="header__title">Receta de Buñuelos</h1>
+        <div class="links__redes">
+            <a href="#" class="link_rs"><i class="bi bi-github"></i></a>
+            <a href="#" class="link_rs"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="link_rs"><i class="bi bi-instagram"></i></a>
+        </div>
+    </header>
+    
+    <nav id="nav">
+        <ul class="navbar">
+            <li><a href="#ingredientes">Ingredientes</a></li>
+            <li><a href="#preparacion">Preparación</a></li>
+            <li><a href="#masrecetas">Enlaces</a></li>
+            <li><a href="#footer">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    
+    <div class="dropdown m-2">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-circle-half"></i> Auto
+        </button>
+        <ul class="dropdown-menu">
+          <li><button id="accesibilidadButton" type="button" class="dropdown-item btn btn-secondary " onclick="vistaNocturna()"><i class="bi bi-moon-fill"></i> Dark</button>
+        </li>
+
+        <li><button id="restaurarButton" type="button" class="dropdown-item btn btn-secondary " onclick="restaurarEstilos()"><i class="bi bi-brightness-high-fill"></i> Light</button></li>
+          
+        </ul>
+      </div>
+
+    <div class="whatsapp-icon">
+        <a target="_blank" href="https://wa.me/2215917413">
+            <img src="./img/whatsapp.webp" alt="WhatsApp">
+        </a>
+    </div>
+
+
+
+    <div class="img-comida" id="imgs">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/1.jpg" class="d-block " alt="foto buñuelos con azucar">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/2.jpg" class="d-block " alt="foto buñuelos con azucar">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/3.jpg" class="d-block " alt="foto buñuelos con azucar">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+        <p class="mg-15" id="text">Los buñuelos son un clásico de la pastelería argentina que acompañan infusiones como el mate,
+            el té o el café. Son fáciles de preparar y se resuelven muy rápidamente con pocos ingredientes</p>
+
+        <section id="ingredientes">
+            <h2 class="titulo mg-15">Ingredientes</h2>
+            <ul>
+                <li>2 huevos</li>
+                <li>1/2 taza de azúcar</li>
+                <li>1 1/2 taza de harina leudante</li>
+                <li>Extracto de vainilla o ralladura de naranja</li>
+                <li>1/2 taza de leche</li>
+                <li>Aceite para freír</li>
+            </ul>
+        </section>
+
+        <section class="preparacion" id="preparacion">
+            <h2 class="titulo mg-15">Preparación</h2>
+            <ol>
+                <li>Mezclar los huevos, el azúcar, la harina leudante y el extracto de vainilla o la ralladura de naranja.</li>
+                <img src="./img/Receta1.png" >
+                <li>Incorporar a la mezcla anterior la leche.</li>
+                <img src="./img/Receta2.png" >
+                <li>Con ayuda de dos cucharas tirar cucharadas de la mezcla sobre el aceite abundante y bien caliente.
+                    Freír hasta que estén doraditos.</li>
+                <li>Dejar enfriar y espolvorear con azúcar impalpable o canela.</li>
+            </ol>
+        </section>
+
+        <section class="info">
+            <div class="video">
+
+                <h3 class="titulo">Video de la Preparación</h3>
+                <iframe src="https://www.youtube.com/embed/pgPU-3StaFk" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="map">
+                <h3 class="titulo">Lugar de la receta</h3>
+                <iframe class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26287968.445981026!2d-84.90299025401465!3d-36.45802697907582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses!2sar!4v1685460261024!5m2!1ses!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="mas__recetas" id="masrecetas">
+            <h3 class="titulo">Enlaces que te pueden interesar</h3>
+
+            <div class="cards__container row gap-2">
+
+                <div class="card col-sm-11 col-md-5 col-lg-2 " >
+                    <img src="https://img-global.cpcdn.com/recipes/e9adfb6f3f64a380/1360x964cq70/rosquitas-super-faciles-y-esponjosas-foto-principal.webp" class="card-img-top" alt="Rosquitas Esponjosas">
+                    <div class="card-body">
+                        <h5 class="card-title">Rosquitas Esponjosas</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="https://cookpad.com/ar/recetas/9378693-rosquitas-super-faciles-y-esponjosas" target="_blank" class="btn btn-primary">Ver Receta</a>
+                    </div>
+                </div>
+                <div class="card col-sm-11 col-md-5 col-lg-2 " >
+                    <img src="https://cdn.eldestapeweb.com/eldestape/102020/1603153842025.webp?cw=770&ch=440&extw=jpg" class="card-img-top" alt="Rosquitas Esponjosas">
+                    <div class="card-body">
+                        <h5 class="card-title">Torta Fritas</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjIj8__0eb-AhWVAq0GHWxCAuEYABAAGgJwdg&ase=2&ohost=www.google.com&cid=CAESbeD2n2XVe8ue7k41qIwAQ-lw6h-Z-cuoT_9klH_3P3z_mkqpLdUkR50HYyUCLB_YT0X-F4HD990lOO1R4f53nmpejMLxGSrWl3RElELF13rUQacxUHofBQPeZj4nqzjmT0305Qv68NxANJ5Uh98&sig=AOD64_0RF_p8ADOfQzPP6nJGP3JK6RoLWw&q&nis=4&adurl&ved=2ahUKEwiP1cP_0eb-AhXwqZUCHRd0DjkQ0Qx6BAgIEAE"
+                        target="_blank"class="btn btn-primary">Ver Receta</a>
+                    </div>
+                </div>
+                <div class="card col-sm-11 col-md-5 col-lg-2 " >
+                    <img src="https://img-global.cpcdn.com/recipes/5dbbd1d9848fe73e/1360x964cq70/medialunas-de-manteca-foto-principal.webp" class="card-img-top" alt="Rosquitas Esponjosas">
+                    <div class="card-body">
+                        <h5 class="card-title">Medialunas</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="https://cookpad.com/ar/recetas/9019754-medialunas-de-manteca" 
+                        target="_blank"class="btn btn-primary">Ver Receta</a>
+                    </div>
+                </div>
+                <div class="card col-sm-11 col-md-5 col-lg-2 " >
+                    <img src="https://turismo.buenosaires.gob.ar/sites/turismo/files/field/image/mate_0.png" class="card-img-top" alt="Rosquitas Esponjosas">
+                    <div class="card-body">
+                        <h5 class="card-title">Claves para preparar un mate</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="https://turismo.buenosaires.gob.ar/es/article/las-claves-para-preparar-un-mate" 
+                        target="_blank"class="btn btn-primary">Ver Receta</a>
+                    </div>
+                </div>
+            </div>
+                
+        </section>
+
+        
+        <footer class="footer" id="footer">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52343.08435818249!2d-57.99437008011886!3d-34.92043086883833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62b1f0085a1%3A0xbcfc44f0547312e3!2sLa%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1684804267662!5m2!1ses!2sar"
+                width="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            
+
+            <button id="+info" class="btn btn-outline-dark" onclick="mostrarInfo()">informacion del desarrollador</button>
+
+            <div class="redes__sociales">
+                <a href="https://www.instagram.com/juantosetti/" target="_blank" class="social__link"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/juan.edlp.102" target="_blank" class="social__link"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/juan-ignacio-tosetti-b5ba56223/" target="_blank"
+                    class="social__link"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/JuanIgnacioTosetti" target="_blank" class="social__link"><i
+                        class="bi bi-github"></i></a>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+        <script src="./js/script.js"></script>
+</body>
+
+</html>
